@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>A1 Table CSS by Vishakan - 196</title>
+    
+    <!--For importing custom font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+
+        table, th, td{
+            border: 2px solid black;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        caption{
+            color: royalblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        th{
+            text-align: center;
+            background-color: lightsalmon;
+        }
+
+        td{
+            text-align: center;
+            background-color: lightskyblue;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        span{
+            color: firebrick;
+            font-weight: bold;
+        }
+
+        .name{
+            font-family: 'Londrina Solid', cursive;
+            font-size: 25px;
+        }
+
+        .rank{
+            font-family: 'Londrina Solid', cursive;
+            font-size: 30px;
+            font-weight: bold;
+            color: orangered;
+        }
+        
+        img{
+            border: 2px solid white;
+            border-radius: 50%;
+            padding: 3px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 style = "font-family: 'Londrina Solid', cursive; text-align: center; color: blue">ASSIGNMENT 1</h1>
+    </header>
+
+    <table>
+        <caption>Details of some contenders at the Tata Steel Chess Tournament 2021</caption>
+
+        <thead style = "font-family: Helvetica; font-size: 20px">
+        <tr>
+            <th rowspan = 2>Player's Name</th>
+            <th rowspan = 2>Player's Picture</th>
+            <th colspan = 3>Player's Details</th>
+        </tr>
+
+        <tr>
+            <th>FIDE Rating</th>
+            <th>World Rank</th>
+            <th>Nationality</th>
+        </tr>    
+        </thead>
+
+        <tbody>
+        <tr>
+            <td rowspan = 2 class = "name">Anish Giri</td>
+            <td rowspan = 2><img src = "anish_giri.jpeg" height = 160px width = 160px></td>
+            <td>Current: <span>2764</span></td>
+            <td rowspan = 2 class = "rank">#6</td>
+            <td rowspan = 2>Dutch</td>
+        </tr>
+
+        <tr>
+            <td>Peak: <span>2798</span></td>
+        </tr>
+
+        <tr>
+            <td rowspan = 2 class = "name">Magnus Carlsen</td>
+            <td rowspan = 2><img src = "magnus_carlsen.jpg" height = 160px width = 160px</td>
+            <td>Current: <span>2862</span></td>
+            <td rowspan = 2 class = "rank">#1</td>
+            <td rowspan = 2>Norweigan</td>
+        </tr>
+
+        <tr>
+            <td>Peak: <span>2882</span></td>
+        </tr>
+
+        <tr>
+            <td rowspan = 2 class = "name">Alireza Firouzja</td>
+            <td rowspan = 2><img src = "alireza_firouzja.png" height = 160px width = 160px</td>
+            <td>Current: <span>2720</span></td>
+            <td rowspan = 2 class = "rank">#13</td>
+            <td rowspan = 2>Iranian</td>
+        </tr>
+
+        <tr>
+            <td>Peak: <span>2749</span></td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <footer style = "font-family: 'Londrina Solid', cursive; font-size: 20px; font-weight: 550; text-align: center;">
+        <p>By Vishakan Subramanian, 18 5001 196, CSE - C</p>
+    </footer>
+</body>
+
+</html>
