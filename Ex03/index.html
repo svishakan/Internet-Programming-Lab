@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Patient Reg. Form</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h3 id="currentTime" class="titleText">00:00:00</h3>
+    <hr>
+    <h1 class="titleText">Patient Registration Form</h1>
+    <br><br>
+
+    <div class="reg-page">
+        <form name="regform" id="regform" method="POST">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" placeholder="John" size="30" required onfocus="nameFocus()"
+                onblur="nameBlur()" oninvalid="nameInvalid()" pattern="^[a-zA-Z]+$"
+                title="Enter English alphabets only">
+            <br><br>
+
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" placeholder="Doe" size="30" required pattern="^[a-zA-Z]+$"
+                title="Enter English alphabets only">
+            <br><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="text" id="phone" placeholder="(+91) 123-456-7890" size="30" required
+                oninvalid="phoneInvalid()">
+            <br><br>
+
+            <label for="email">E-Mail</label><br>
+            <input type="text" id="email" placeholder="john.doe@email.com" size="30" required>
+            <br><br>
+
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" id="dob" required><br><br>
+
+            <label for="age">Age</label><br>
+            <input type="number" id="age" min="1" max="120" step="1" placeholder="21" required
+                onkeypress="ageKeyPress()">
+            <br><br>
+
+
+            <label>Gender</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" required>
+            <label for="other">Other</label>
+
+            <br><br>
+
+            <label for="marital">Marital Status</label><br>
+            <select id="marital" required onchange="maritalChange()">
+                <option>Single</option>
+                <option>In A Relationship</option>
+                <option>Married</option>
+                <option>Separated</option>
+                <option>Divorced</option>
+                <option>Widowed</option>
+            </select>
+            <br><br>
+
+            <label for="addr">Address</label><br>
+            <textarea cols="30" rows="3" id="addr" required onselect="addrSelect()"></textarea>
+            <br><br>
+
+            <label for="addict">Addictions</label><br>
+            <textarea cols="30" rows="3" id="addict" required></textarea>
+            <ul id="addict-list">
+                <li draggable="true">Drugs </li>
+                <li draggable="true">Alcohol </li>
+                <li draggable="true">Behavioral </li>
+                <li draggable="true">Gaming </li>
+                <li draggable="true">NA </li>
+            </ul>
+            <br><br>
+
+            <input type="submit" class="btn" name="Submit" id="Submit" value="Register"></input>
+            <input type="reset" class="btn" name="Reset" id="Reset" value="Clear All"></input>
+            <input type="button" class="btn" name="Game" id="Game" value="Play A Game!" onclick="playGame()"></input>
+            <input type="button" class="btn" name="Quit" id="Quit" value="Quit" onclick="exitPage()"></input>
+
+        </form>
+    </div>
+
+    <footer>
+        &copy; Vishakan Subramanian 2021
+    </footer>
+
+    <script src="js/index.js"></script>
+
+    </form>
+</body>
+
+</html>
