@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Reg. Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="titleText">Employee Registration Form</h1>
+    <hr>
+    <br><br>
+
+    <div class="reg-page">
+        <form action="Form" name="regform" id="regform" method="GET">
+            <label for="eid">Employee ID</label><br>
+            <input type="text" name="eid" placeholder="SSN0203" size="30" required>
+            <br><br>
+
+            <label for="ename">Employee Name</label><br>
+            <input type="text" name="ename" placeholder="Dwight Schrute" size="30" required title="Enter English alphabets only">
+            <br><br>
+
+            <label for="job">Designation</label><br>
+            <input type="text" name="job" placeholder="AARM" size="30" required>
+            <br><br>
+
+            <label for="dept">Department</label><br>
+            <input type="text" name="dept" placeholder="Sales" size="30" required>
+            <br><br>
+
+            <label for="basic">Basic Salary</label><br>
+            <input type="text" name="basic" placeholder="40000" size="30" pattern="^\d+(\.\d{1,2})?$" required>
+            <br><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="text" name="phone" placeholder="(+91) 123-456-7890" size="20">
+            <br><br>
+
+            <label for="addr">Address</label><br>
+            <textarea cols="30" rows="3" name="addr" required></textarea>
+            <br><br>
+
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" name="dob" required><br><br>
+
+            <label>Gender</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" required>
+            <label for="other">Other</label>
+
+            <br><br>
+
+            <label for="marital">Marital Status</label><br>
+            <select name="marital" required>
+                <option>Single</option>
+                <option>In A Relationship</option>
+                <option>Married</option>
+                <option>Separated</option>
+                <option>Divorced</option>
+                <option>Widowed</option>
+            </select>
+            <br><br>
+
+            <input type="submit" class="btn" name="Submit" id="Submit" value="Register"></input>
+            <input type="reset" class="btn" name="Reset" id="Reset" value="Clear All"></input>
+        </form>
+    </div>
+
+    <footer>
+        &copy; Vishakan Subramanian 2021
+    </footer>
+</body>
+
+</html>

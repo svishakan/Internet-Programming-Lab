@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PMS - View Records</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <h1 class="titleText">Patient Management System</h1>
+    <hr>
+    <h2 class="titleText">View All Records</h2><br><br>
+    <h3 class="titleText" id="responseText"></h3>
+    <div class="reg-page">
+        <form name="form2" method="GET" action="ViewRecords">
+            <input type="submit" class="btn" value="View" id="button" />
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("responseText").innerHTML = localStorage.getItem("action");
+    </script>
+
+</body>
+
+</html>

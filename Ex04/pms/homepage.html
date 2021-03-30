@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PMS Portal</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <h1 class="titleText">Patient Management System</h1>
+    <hr>
+    <h2 class="titleText">Navigation Menu</h2><br><br>
+    <div align="center" class="reg-page">
+        <button class="btn"><a href="add.html", target="_blank" class="links">Add A Record</a></button><br><br>
+        <button class="btn"><a href="update.html", target="_blank" class="links">Update A Record</a></button><br><br>
+        <button class="btn"><a href="delete.html", target="_blank" class="links">Delete A Record</a></button><br><br>
+        <button class="btn" onclick="clearAction()"><a href="view.html", target="_blank" class="links">View All Records</a></button><br><br>
+        <button class="btn"><a href="search.html", target="_blank" class="links">Search A Record</a></button><br><br>
+    </div>
+
+    <script>
+        clearAction = () =>{
+            localStorage.setItem("action", ""); //clearing the action field for the view page
+        }
+    </script>
+
+</body>
+
+</html>

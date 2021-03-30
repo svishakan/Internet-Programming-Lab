@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PMS - Delete Record</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <h1 class="titleText">Patient Management System</h1>
+    <hr>
+    <h2 class="titleText">Delete A Record</h2><br><br>
+    <div class="reg-page">
+        <form name="form1" method="GET" action="DeleteRecord">
+            <label for="id">Patient ID:</label><br>
+            <input type="text" name="pid" /><br><br>
+            <input type="submit" class="btn" value="Delete Record" id="button" />
+        </form>
+    </div>
+
+    <script>
+        localStorage.setItem("action", "Record Deleted Successfully!");
+    </script>
+
+</body>
+
+</html>
