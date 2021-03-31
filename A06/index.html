@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Retrieve Bank Records</h1>
+
+    <div align="center">
+        <button type="button" onclick="loadDocument()">Get Branch Details</button>
+        <br><br>
+        <table id="content"></table>
+        <br><br>
+        <div id="details"></div>
+    </div>
+
+
+    <script>
+        loadDocument = () => {
+            let xhttp = new XMLHttpRequest();   //to interact with server without reloading page
+            xhttp.onreadystatechange = function () {    //the XMLHttpRequest's readyState changes
+                if(this.readyState == 4 && this.status == 200){     //readyState = 4 => Done, status = 200 => HTTP OK
+                    loadButtons(this);
+                }
+            };
+
+            xhttp.open("GET", "bank.xml", true);    //to initialize a get request to this document, true => async call
+            xhttp.send();   //fire the get request to fetch the document
+        }
+
+        loadButtons = (xml) => {
+            let i = 0;
+            let xmlDoc = xml.responseXML;   //read only document retrieved by the request
+            let x = xmlDoc.getElementsByTagName("record");  //DOM Method that returns all elements with the specified tag
+            let table = "<tr><th>Branch</th></tr>";
+
+            for (i = 0; i < x.length; i++) {
+                table += `<tr><td><button type="button" onclick="loadBranchDetails(${i})">`;
+                table += x[i].getElementsByTagName("branch")[0].childNodes[0].nodeValue + "</button></td></tr>";
+            }   //childNodes[0] is the textNode of the childNode here, nodeValue gets the value of the textNode
+
+            document.getElementById("content").innerHTML = table;
+        }
+
+        loadBranchDetails = (index) => {
+            let xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if(this.readyState == 4 && this.status == 200){
+                    displayBranchDetails(this, index);
+                }
+            };
+
+            xhttp.open("GET", "bank.xml", true);
+            xhttp.send();
+        }
+
+        displayBranchDetails = (xml, i) => {
+            let xmlDoc = xml.responseXML;
+            let x = xmlDoc.getElementsByTagName("record");
+            let branchDetails = `State: ${x[i].getElementsByTagName("state")[0].childNodes[0].nodeValue}`;
+            branchDetails +=    `<br>District: ${x[i].getElementsByTagName("district")[0].childNodes[0].nodeValue}`;
+            branchDetails +=    `<br>Address: ${x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue}`;
+            branchDetails +=    `<br>Branch: ${x[i].getElementsByTagName("branch")[0].childNodes[0].nodeValue}`;
+            branchDetails +=    `<br>IFSC: ${x[i].getElementsByTagName("ifsc")[0].childNodes[0].nodeValue}`;
+            branchDetails +=    `<br>MICR: ${x[i].getElementsByTagName("micr")[0].childNodes[0].nodeValue}`;
+            branchDetails +=    `<br>Bank Code: ${x[i].getElementsByTagName("code")[0].childNodes[0].nodeValue}`;
+            
+            document.getElementById("details").innerHTML = branchDetails;
+            
+        }
+    </script>
+
+</body>
+
+</html>

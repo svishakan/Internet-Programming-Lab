@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<details>
+
+  <record>
+    <state>Tamil Nadu</state>
+    <district>Chennai</district>
+    <address>34, ABCD Street</address>
+    <branch>Kalavakkam</branch>
+    <ifsc>BANK1029345</ifsc>
+    <micr>00003348500</micr>
+    <code>BANKCD00001</code>
+  </record>
+
+  <record>
+    <state>Kerala</state>
+    <district>Thiruvananthapuram</district>
+    <address>56, EFGH Street</address>
+    <branch>Thillai Ganga Nagar</branch>
+    <ifsc>BANK1029456</ifsc>
+    <micr>00002230459</micr>
+    <code>BANKCD00002</code>
+  </record>
+
+  <record>
+    <state>Rajasthan</state>
+    <district>Jodhpur</district>
+    <address>78, IJKL Street</address>
+    <branch>Motabhai Estate</branch>
+    <ifsc>BANK1093847</ifsc>
+    <micr>00002387411</micr>
+    <code>BANKCD00003</code>
+  </record>
+
+</details>
