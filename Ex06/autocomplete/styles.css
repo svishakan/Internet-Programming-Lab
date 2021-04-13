@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background: rgb(103,212,159);
+    background: radial-gradient(circle, rgba(103,212,159,1) 0%, rgba(113,217,236,1) 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+input{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    color: black;
+    font-weight: bold;
+    border-top: 3px solid black;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    width: 100%;
+}

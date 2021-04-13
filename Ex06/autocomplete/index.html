@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Autocomplete Using AJAX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Select Your Country</h1><hr><br>
+
+    <div align="center">
+        <p id="info"></p>
+    </div>
+
+    <div id="dropdown" align="center" class="dropdown-list">
+        <input list="country-data" id="country-input" name="country-input" onkeyup="filterCountries()" />
+        <datalist id="country-data">
+        </datalist>
+    </div>
+    
+   
+    
+    <footer>
+        &copy; Vishakan Subramanian 2021
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

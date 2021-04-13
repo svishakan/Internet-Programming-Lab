@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile Tracking</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class='titleText'>Login To Your Account</h1>
+    <hr><br>
+
+    <div class="login">
+        <form id="loginform" action="LoginServlet">
+            <label for="uname">Username:</label>
+            <input type="text" name="uname" id="uname" required><br>
+
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" required><br>
+
+            <input type="submit" value="Login" class="btn" id="submit">
+            <input type="reset" value="Clear All" class="btn" id="reset">
+        </form>
+    </div>
+
+    <footer>
+        &copy; Vishakan Subramanian 2021
+    </footer>
+
+</body>
+
+</html>
