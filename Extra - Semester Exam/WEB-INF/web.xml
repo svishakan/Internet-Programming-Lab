@@ -1,0 +1,36 @@
+<web-app>
+    <servlet>
+        <servlet-name>AddTask</servlet-name>
+        <servlet-class>AddTask</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DeleteTask</servlet-name>
+        <servlet-class>DeleteTask</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>TruncateTasks</servlet-name>
+        <servlet-class>TruncateTasks</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>AddTask</servlet-name>
+        <url-pattern>/AddTask</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeleteTask</servlet-name>
+        <url-pattern>/DeleteTask</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>TruncateTasks</servlet-name>
+        <url-pattern>/TruncateTasks</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>

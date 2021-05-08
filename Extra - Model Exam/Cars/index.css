@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    background: slategray;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    text-transform: uppercase;
+}
+
+nav {
+    background: sandybrown;
+    border: 2px solid black;
+}
+
+nav ul li {
+    font-size: 18px;
+    list-style-type: none;
+    display: inline-block;
+    border-right: 2px;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px;
+    color: white;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: navy;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    color: paleturquoise;
+}
+
+footer {
+    background: violet;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid black;
+    font-size: 15px;
+    font-weight: 750;
+}
+
+footer a {
+    text-decoration: underline;
+    color: white;
+}
+
+.formdiv {
+    margin: auto;
+    width: 750px;
+    text-align: left;
+    background: floralwhite;
+    border: 2px solid black;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.formtitle {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input,
+select {
+    width: 100;
+    padding: 10px;
+    margin: 10px;
+
+    font-size: 15px;
+    color: midnightblue;
+    font-weight: bold;
+}
+
+.formdiv .btn {
+    margin-left: 250px;
+    font-weight: 550;
+    text-transform: uppercase;
+    width: 200px;
+    padding: 10px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    font-weight: bold;
+    background: cyan;
+}
+
+table {
+    margin-top: 100px;
+}
+
+table,
+td,
+th {
+    font-size: 20px;
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    color: snow;
+    text-transform: uppercase;
+}
+
+td {
+    color: greenyellow;
+    font-weight: bold;
+}
+
+tr:hover {
+    background: dimgrey;
+}
+
+h4 {
+    margin-top: 300px;
+    text-align: center;
+    color: paleturquoise;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h4 #hits {
+    margin-left: 10px;
+    color: ghostwhite;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.hometext {
+    margin: auto;
+    width: 500px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.hometext p {
+    font-weight: 700;
+    text-align: justify;
+}
+
+img {
+    border: 2px solid black;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cars Galore</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Very Good Car Company</h1>
+        <h2>Welcome to Very Good Cars, where you get the best deals for quality cars!</h2>
+        <h2>Cars are available to be taken on a test drive.</h2>
+
+        <br>
+
+        <nav align="center">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sales.html">SALES</a></li>
+                <li><a href="index.html">SERVICE</a></li>
+                <li><a href="index.html">MODELS</a></li>
+                <li><a href="form.html">TEST DRIVE</a></li>
+                <li><a href="index.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <h3>TEST DRIVE</h3>
+
+    <div class="formdiv" align="center">
+        <form id="driveform" action="TestDrive" method="GET">
+            <div class="formtitle">REGISTRATION FORM</div><br><br>
+            <label for="uname">Name:</label>
+            <input type="text" name="uname" id="uname" placeholder="John Doe" required /><br>
+
+            <label for="carmodel">Car Model:</label>
+            <select name="carmodel" id="carmodel" placeholder="Tesla Model S" required>
+                <option>Tesla Model S</option>
+                <option>Tesla Model X</option>
+                <option>Tesla Model 3</option>
+                <option>Range Rover Azure</option>
+                <option>Audi A3</option>
+                <option>BMW S1000</option>
+                <option>Tata Nano</option>
+                <option>Hyundai Etios</option>
+                <option>Ford Fiesta XS</option>
+            </select>
+            <br>
+
+            <label for="dor">Date of Registration:</label>
+            <input type="date" name="dor" id="dor" required /><br>
+
+            <label for="phone">Phone:</label>
+            <input type="number" name="phone" id="phone" placeholder="1234567890" required /><br>
+
+            <input type="submit" class="btn" name="Submit" id="Submit" value="Register" /><br>
+            <input type="reset" class="btn" name="Reset" id="Reset" value="Clear All" /><br>
+        </form>
+    </div>
+
+    <footer align="center">
+        <address>Contact us @ <a href="mailto:verygoodcars@cars.com">Very Good Cars</a></address>
+        <span>&copy; Very Good Car Company</span>
+    </footer>
+</body>
+
+</html>
